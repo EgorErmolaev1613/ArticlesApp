@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.postapp.controllers.ArticlesPanelController">
+    <children>
+        <Label layoutX="190.0" layoutY="28.0" text="Новости с сайта" textFill="WHITE">
+            <font>
+                <Font name="Consolas" size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="exitButton" focusTraversable="false" layoutX="477.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@../../../styles/main.css" text="Выйти" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Montserrat Regular" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <ScrollPane focusTraversable="false" hbarPolicy="NEVER" layoutY="85.0" prefHeight="318.0" prefWidth="600.0" style="-fx-background-color: #343434;">
+            <content>
+                <VBox fx:id="panelVBox" prefHeight="316.0" prefWidth="601.0" style="-fx-background-color: #343434;" />
+            </content>
+        </ScrollPane>
+        <Button fx:id="addPostButton" focusTraversable="false" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@../../../styles/main.css" text="Добавить статью" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Montserrat Regular" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </children>
+</AnchorPane>

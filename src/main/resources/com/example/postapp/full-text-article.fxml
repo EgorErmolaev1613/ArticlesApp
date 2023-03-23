@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.postapp.controllers.FullTextArticleController">
+    <children>
+        <Label layoutX="258.0" layoutY="29.0" text="Статья" textFill="WHITE">
+            <font>
+                <Font name="Consolas" size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="exitButton" focusTraversable="false" layoutX="477.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@../../../styles/main.css" text="Выйти" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Consolas" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <ScrollPane focusTraversable="false" hbarPolicy="NEVER" layoutY="85.0" prefHeight="318.0" prefWidth="600.0" style="-fx-background-color: #343434;">
+         <content>
+            <TextArea fx:id="articleFullTextArea" prefHeight="322.0" prefWidth="600.0" style="-fx-background-color: #343434;" stylesheets="@../../../styles/textarea.css" />
+         </content>
+        </ScrollPane>
+        <Button fx:id="BackButton" focusTraversable="false" layoutX="5.0" layoutY="24.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="166.0" stylesheets="@../../../styles/main.css" text="Назад" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Consolas" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+    </children>
+</AnchorPane>

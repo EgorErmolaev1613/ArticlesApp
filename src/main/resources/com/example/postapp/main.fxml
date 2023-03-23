@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="regRigths" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.postapp.controllers.RegController">
+   <children>
+      <PasswordField fx:id="authPass" focusTraversable="false" layoutX="382.0" layoutY="151.0" prefHeight="32.0" prefWidth="154.0" promptText="Введите пароль" styleClass="text-input" stylesheets="@../../../styles/main.css">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="71.0" layoutY="44.0" text="Регистрация" textFill="#fcf8f8">
+         <font>
+            <Font name="Consolas Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="399.0" layoutY="44.0" text="Авторизация" textFill="#fcf8f8">
+         <font>
+            <Font name="Consolas Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="regLogin" focusTraversable="false" layoutX="54.0" layoutY="87.0" prefHeight="27.0" prefWidth="154.0" promptText="Введите логин" styleClass="text-input" stylesheets="@../../../styles/main.css">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="regEmail" focusTraversable="false" layoutX="54.0" layoutY="140.0" prefHeight="27.0" prefWidth="154.0" promptText="Введите email" styleClass="text-input" stylesheets="@../../../styles/main.css">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="regPass" focusTraversable="false" layoutX="54.0" layoutY="192.0" prefHeight="32.0" prefWidth="154.0" promptText="Введите пароль" styleClass="text-input" stylesheets="@../../../styles/main.css">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </PasswordField>
+      <CheckBox fx:id="regRights" focusTraversable="false" layoutX="54.0" layoutY="246.0" mnemonicParsing="false" selected="true">
+         <graphic>
+            <Hyperlink focusTraversable="false" styleClass="link" stylesheets="@../../../styles/main.css" text="Пользвовательское соглашение" textFill="#fffdfd" underline="true">
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+            </Hyperlink>
+         </graphic>
+      </CheckBox>
+      <Button fx:id="regButton" focusTraversable="false" layoutX="54.0" layoutY="292.0" mnemonicParsing="false" stylesheets="@../../../styles/main.css" text="Зарегистрироваться" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="authLogin" focusTraversable="false" layoutX="382.0" layoutY="93.0" prefHeight="27.0" prefWidth="154.0" promptText="Введите логин" styleClass="text-input" stylesheets="@../../../styles/main.css">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="authButton" focusTraversable="false" layoutX="420.0" layoutY="212.0" mnemonicParsing="false" stylesheets="@../../../styles/main.css" text="Войти" textAlignment="CENTER" textFill="#f7f7f7">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

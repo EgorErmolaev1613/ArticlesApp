@@ -1,0 +1,5 @@
+.text-input {
+    -fx-text-fill: #fafafa;
+    -fx-control-inner-background: #343434;
+    -fx-prompt-text-fill: #a1a1a1;
+}

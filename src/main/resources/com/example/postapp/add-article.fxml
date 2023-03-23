@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="regRigths" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.postapp.controllers.AddArticleController">
+    <children>
+        <Label layoutX="173.0" layoutY="24.0" text="Добавление новой статьи" textFill="#fcf8f8">
+            <font>
+                <Font name="Consolas Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="titleField" focusTraversable="false" layoutX="27.0" layoutY="64.0" prefHeight="40.0" prefWidth="554.0" promptText="Введите название" styleClass="text-input" stylesheets="@../../../styles/main.css">
+            <font>
+                <Font name="Consolas" size="14.0" />
+            </font>
+        </TextField>
+        <Button focusTraversable="false" layoutX="215.0" layoutY="347.0" mnemonicParsing="false" onAction="#addArticle" prefHeight="38.0" prefWidth="178.0" stylesheets="@../../../styles/main.css" text="Добавить статью" textAlignment="CENTER" textFill="#f7f7f7">
+            <font>
+                <Font name="Consolas" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <TextArea fx:id="introField" focusTraversable="false" layoutX="27.0" layoutY="124.0" prefHeight="200.0" prefWidth="196.0" promptText="Введите анонс" stylesheets="@../../../styles/textarea.css">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="fullTextField" focusTraversable="false" layoutX="237.0" layoutY="124.0" prefHeight="200.0" prefWidth="338.0" promptText="Введите анонс" stylesheets="@../../../styles/textarea.css" text="Введите полный текст статьи">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font>
+      </TextArea>
+    </children>
+</AnchorPane>

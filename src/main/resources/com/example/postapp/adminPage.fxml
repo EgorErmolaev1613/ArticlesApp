@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="regRigths" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.postapp.controllers.AdminController">
+    <children>
+        <PasswordField fx:id="adminPassword" focusTraversable="false" layoutX="223.0" layoutY="200.0" prefHeight="32.0" prefWidth="154.0" promptText="Введите пароль" styleClass="text-input" stylesheets="@../../../styles/main.css">
+            <font>
+                <Font name="Consolas" size="14.0" />
+            </font>
+        </PasswordField>
+        <Label layoutX="190.0" layoutY="46.0" text="Кабинет пользователя" textFill="#fcf8f8">
+            <font>
+                <Font name="Consolas Bold" size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="adminLogin" focusTraversable="false" layoutX="221.0" layoutY="97.0" prefHeight="27.0" prefWidth="154.0" promptText="Введите логин" styleClass="text-input" stylesheets="@../../../styles/main.css">
+            <font>
+                <Font name="Consolas" size="14.0" />
+            </font>
+        </TextField>
+        <Button fx:id="updateAdminButton" focusTraversable="false" layoutX="222.0" layoutY="257.0" mnemonicParsing="false" stylesheets="@../../../styles/main.css" text="Изменить данные" textAlignment="CENTER" textFill="#f7f7f7">
+            <font>
+                <Font name="Consolas" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <TextField fx:id="adminEmail" focusTraversable="false" layoutX="221.0" layoutY="148.0" prefHeight="27.0" prefWidth="154.0" promptText="Введите логин" styleClass="text-input" stylesheets="@../../../styles/main.css">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>
