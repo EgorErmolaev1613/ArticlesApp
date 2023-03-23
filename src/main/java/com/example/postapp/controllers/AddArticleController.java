@@ -9,6 +9,7 @@ import com.example.postapp.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
@@ -33,6 +34,9 @@ public class AddArticleController {
 
     @FXML
     private TextField titleField;
+
+    @FXML
+    private Button BackButton;
 
     @FXML
     void addArticle(ActionEvent event) {
@@ -69,7 +73,14 @@ public class AddArticleController {
 
     @FXML
     void initialize() {
-
+        BackButton.setOnAction(event -> {
+            try {
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                HelloApplication.setScene("articles-panel.fxml", stage);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
 
     }
 
